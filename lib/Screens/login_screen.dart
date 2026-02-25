@@ -9,7 +9,19 @@ class LoginScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: [],
+        children: [
+          SizedBox(
+            height: 20,
+            width: 20,
+          ),
+          Icon(
+            Icons.school,
+            size: 23,
+          ),
+          SizedBox(height: 20,
+          width: 20,
+          )
+        ],
       ),
     );
   }
