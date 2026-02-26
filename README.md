@@ -3,3 +3,6 @@ DAY -1.
 
     Progress :
         progress so far is that ive created a repo and wrote this ahahah.
+
+DAY -2
+    
