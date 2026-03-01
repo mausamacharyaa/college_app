@@ -1,3 +1,4 @@
+import 'package:college_app/Screens/dashboard_screen.dart';
 import 'package:college_app/Screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true, colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue)),
-      home: LoginScreen(),
+      home: DashboardScreen(),
     );
   }
 }
