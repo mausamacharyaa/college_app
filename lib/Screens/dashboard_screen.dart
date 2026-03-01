@@ -8,15 +8,27 @@ class DashboardScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Hey Mausam!", style: TextStyle(fontWeight: FontWeight.bold)),
+        title: Text("Hey Mausam!", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 26)),
         elevation: 10,
         leading: IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
         actions: [IconButton(onPressed: () {}, icon: Icon(Icons.person))],
       ),
 
-      body: Column(crossAxisAlignment: CrossAxisAlignment.start,
-      children: [SizedBox(height: 20)
-      Text],
+      body: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SizedBox(height: 10),
+            Text(
+              "Quick Access :",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+            ),
+            SizedBox(height: 15),
+            
+          ],
+        ),
       ),
     );
   }
