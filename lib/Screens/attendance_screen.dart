@@ -42,12 +42,12 @@ class AttendanceScreen extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
-                  subjectCard("Mathemtics", " 70%"),
-                  subjectCard("Biology", " 95%"),
-                  subjectCard("Physics", " 80%"),
-                  subjectCard("Chemistry", " 100%"),
-                  subjectCard("English", " 80%"),
-                  subjectCard("Nepali", " 23%"),
+                  subjectCard("Mathemtics", 70),
+                  subjectCard("Biology", 95),
+                  subjectCard("Physics", 100),
+                  subjectCard("Chemistry", 20),
+                  subjectCard("English", 75),
+                  subjectCard("Nepali", 67),
                 ],
               ),
             ),
@@ -58,7 +58,7 @@ class AttendanceScreen extends StatelessWidget {
   }
 }
 
-Widget subjectCard(String subject, String percent) {
+Widget subjectCard(String subject, int percent) {
   return Card(
     elevation: 8,
     margin: EdgeInsets.only(bottom: 15),
@@ -66,7 +66,10 @@ Widget subjectCard(String subject, String percent) {
 
     child: ListTile(
       title: Text(subject, style: TextStyle(fontWeight: FontWeight.bold)),
-      trailing: Text(percent, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+      trailing: Text(
+        "$percent %",
+        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: percent >= 75 ? Colors.green : Colors.red),
+      ),
     ),
   );
 }
