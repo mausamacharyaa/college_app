@@ -1,6 +1,7 @@
 import 'package:college_app/Screens/Attendance_screen.dart';
 import 'package:college_app/Screens/dashboard_screen.dart';
 import 'package:college_app/Screens/login_screen.dart';
+import 'package:college_app/Screens/syllabus_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true, colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue)),
-      home: DashboardScreen(),
+      home: SyllabusScreen(),
     );
   }
 }
