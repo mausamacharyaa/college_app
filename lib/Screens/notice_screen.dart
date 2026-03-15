@@ -6,7 +6,16 @@ class NoticeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ,
+      appBar: AppBar(
+        toolbarHeight: 80,
+        centerTitle: true,
+        title: Text("Collee Notice", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 29)),
+        leading: IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back),),
+        actions: [IconButton(onPressed:  () {}, icon: Icon(Icons.notifications))],
+      ),
+
+      //body
+      
     );
   }
 }
