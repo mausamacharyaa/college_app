@@ -15,7 +15,16 @@ class NoticeScreen extends StatelessWidget {
       ),
 
       //body
-      
+      body: Padding(
+        padding: const EdgeInsets.all(11.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            
+          ],
+          
+        ),
+      ),
     );
   }
 }
